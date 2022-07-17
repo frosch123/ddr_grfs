@@ -1,0 +1,7 @@
+##grflangid 0x01
+
+STR_GRF_NAME           :DDR: Xenonauts objects
+STR_GRF_DESC           :Adds Xenonauts themed objects
+
+STR_OBJ_XENO_CLASS     :Xenonauts
+STR_OBJ_REAPER_CORPSE  :Reaper corpse

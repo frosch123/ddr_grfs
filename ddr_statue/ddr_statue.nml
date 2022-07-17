@@ -1,0 +1,19 @@
+grf {
+    grfid: "DDR\02";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESC);
+    version: 1;
+    min_compatible_version: 1;
+}
+
+replace statue(2632, "statue8.png") {
+    [0, 0, 64, 31, -31, 0]
+}
+
+alternative_sprites(statue, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "statue32.png") {
+    [0, 0, 64, 31, -31, 0]
+}
+
+alternative_sprites(statue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "statue32.png") {
+    [0, 129, 256, 127, -124, -2]
+}

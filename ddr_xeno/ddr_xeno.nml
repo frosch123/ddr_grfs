@@ -1,0 +1,64 @@
+grf {
+    grfid: "DDR\03";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESC);
+    version: 1;
+    min_compatible_version: 1;
+}
+
+replace transmitter(2601, "egg64_8.png") {
+    [0, 0, 64, 90, -31, -79]
+}
+
+alternative_sprites(transmitter, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "egg64_32.png") {
+    [0, 0, 64, 90, -31, -79]
+}
+
+alternative_sprites(transmitter, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "egg128_32.png") {
+    [0, 0, 128, 180, -62, -159]
+}
+
+
+spriteset(obj_reaper_corpse_set, "corpse40_8.png") {
+    [0, 0, 40, 26, -20, 0]
+}
+
+alternative_sprites(obj_reaper_corpse_set, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "corpse40_32.png") {
+    [0, 0, 40, 26, -20, 0]
+}
+
+alternative_sprites(obj_reaper_corpse_set, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "corpse80_32.png") {
+    [0, 0, 80, 51, -40, -1]
+}
+
+spritelayout obj_reaper_corpse_tile {
+    ground {
+        sprite : 3981;
+    }
+    building {
+        sprite        : obj_reaper_corpse_set;
+        xextent       : 16;
+        yextent       : 16;
+        zextent       : 6;
+    }
+}
+
+item (FEAT_OBJECTS, obj_reaper_corpse) {
+    property {
+        class                  : "XENO";
+        classname              : string(STR_OBJ_XENO_CLASS);
+        name                   : string(STR_OBJ_REAPER_CORPSE);
+        climates_available     : ALL_CLIMATES;
+        size                   : [ 1, 1 ];
+        build_cost_multiplier  : 1;
+        remove_cost_multiplier : 1;
+        height                 : 1;
+        count_per_map256       : 8;
+        object_flags           : bitmask(OBJ_FLAG_ALLOW_BRIDGE);
+    }
+    graphics {
+        default: obj_reaper_corpse_tile;
+        tile_check: return getbits(extra_callback_info1, 0, 5) == 0 ? CB_RESULT_LOCATION_ALLOW : CB_RESULT_LOCATION_DISALLOW;
+        autoslope: return CB_RESULT_NO_AUTOSLOPE;
+    }
+}

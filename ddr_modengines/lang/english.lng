@@ -1,0 +1,30 @@
+##grflangid 0x01
+
+STR_GRF_NAME        :DDR: Moderator names
+STR_GRF_DESC        :Renames vanilla engines from temperate climate with moderator names
+
+STR_STEAM1          :Keriew (steam)
+STR_STEAM2          :Hydro (steam)
+STR_STEAM3          :Docteurmarsonge (steam)
+STR_STEAM4          :Elkoro (steam)
+
+STR_DIESEL1         :Fanofgaming (diesel)
+STR_DIESEL2         :Baron Von PWN (diesel)
+STR_DIESEL3         :Pepperann (diesel)
+
+STR_DMU1            :Earlvonvummer (diesel)
+STR_DMU2            :Bewaretheblobber (diesel)
+STR_DMU3            :Iftclerk (diesel)
+
+STR_ELECTRIC1       :Thagnus (electric)
+STR_ELECTRIC2       :Bane Williams (electric)
+STR_ELECTRIC3       :SPAMbuca (electric)
+STR_ELECTRIC4       :Legendarymarvin (electric)
+
+STR_MONO1           :Kalpa
+STR_MONO2           :Alphagemo
+
+STR_MAG1            :Pizzariffic
+STR_MAG2            :Reste
+STR_MAG3            :Aelicious
+STR_MAG4            :Lizard

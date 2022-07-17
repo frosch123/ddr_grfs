@@ -1,0 +1,127 @@
+grf {
+    grfid: "DDR\01";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESC);
+    version: 1;
+    min_compatible_version: 1;
+}
+
+item(FEAT_TRAINS, steam1, 0) {
+    property {
+        name: string(STR_STEAM1);
+    }
+}
+
+item(FEAT_TRAINS, steam2, 8) {
+    property {
+        name: string(STR_STEAM2);
+    }
+}
+
+item(FEAT_TRAINS, steam3, 9) {
+    property {
+        name: string(STR_STEAM3);
+    }
+}
+
+item(FEAT_TRAINS, steam4, 10) {
+    property {
+        name: string(STR_STEAM4);
+    }
+}
+
+item(FEAT_TRAINS, diesel1, 13) {
+    property {
+        name: string(STR_DIESEL1);
+    }
+}
+
+item(FEAT_TRAINS, diesel2, 14) {
+    property {
+        name: string(STR_DIESEL2);
+    }
+}
+
+item(FEAT_TRAINS, diesel3, 15) {
+    property {
+        name: string(STR_DIESEL3);
+    }
+}
+
+item(FEAT_TRAINS, dmu1, 11) {
+    property {
+        name: string(STR_DMU1);
+    }
+}
+
+item(FEAT_TRAINS, dmu2, 12) {
+    property {
+        name: string(STR_DMU2);
+    }
+}
+
+item(FEAT_TRAINS, dmu3, 22) {
+    property {
+        name: string(STR_DMU3);
+    }
+}
+
+item(FEAT_TRAINS, electric1, 23) {
+    property {
+        name: string(STR_ELECTRIC1);
+    }
+}
+
+item(FEAT_TRAINS, electric2, 24) {
+    property {
+        name: string(STR_ELECTRIC2);
+    }
+}
+
+item(FEAT_TRAINS, electric3, 25) {
+    property {
+        name: string(STR_ELECTRIC3);
+    }
+}
+
+item(FEAT_TRAINS, electric4, 26) {
+    property {
+        name: string(STR_ELECTRIC4);
+    }
+}
+
+item(FEAT_TRAINS, mono1, 54) {
+    property {
+        name: string(STR_MONO1);
+    }
+}
+
+item(FEAT_TRAINS, mono2, 55) {
+    property {
+        name: string(STR_MONO2);
+    }
+}
+
+item(FEAT_TRAINS, mag1, 84) {
+    property {
+        name: string(STR_MAG1);
+    }
+}
+
+item(FEAT_TRAINS, mag2, 85) {
+    property {
+        name: string(STR_MAG2);
+    }
+}
+
+item(FEAT_TRAINS, mag3, 86) {
+    property {
+        name: string(STR_MAG3);
+    }
+}
+
+item(FEAT_TRAINS, mag4, 87) {
+    property {
+        name: string(STR_MAG4);
+    }
+}
